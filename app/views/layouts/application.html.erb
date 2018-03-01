@@ -4,23 +4,48 @@
     <title>CFapp</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Poiret+One" rel="stylesheet">
+
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navigation-bar" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+          <div class="home-icon ">
+            <a class="navbar-brand" id="logo" href="#"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+          </div><!--end home-icon-->
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">About</a>
+            </li><!--dropdown menu-->
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div><!--en nav collapse-->
+      </div><!--end nav container-->
+    </nav><!--end navbar-->
 
     <%= yield %>
 
-    <footer>
-      &copy; 2017 Bike Berlin
+    <footer class = footer>
+      <div class="container">
+        <p class="text-muted">&copy; 2017 Bike Berlin</p>
+      </div>
     </footer>
 
   </body>
