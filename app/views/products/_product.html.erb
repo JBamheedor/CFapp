@@ -1,5 +1,4 @@
 <div class="row">
-  <% @products.each do |product| %>
     <div class="row">
     <div class="col-md-8">
         <%= image_tag(product.image_url, class: "img-responsive center")unless product.image_url.blank?%>
@@ -11,5 +10,4 @@
         <p><%= product.price %></p>
     </div>
     </div>
-  <% end %>
 </div>
