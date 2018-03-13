@@ -4,10 +4,10 @@
         <%= image_tag(product.image_url, class: "img-responsive center")unless product.image_url.blank?%>
     </div>
     <div class="col-md-4">
-        <a href="#"><h1><%= product.name %></h1></a>
-        <p><%= product.description %></p>
-        <p><%= product.color %></p>
-        <p><%= product.price %></p>
+      <h1><%= link_to product.name, product_path(product.id) %></h1>
+      <p><%= product.description %></p>
+      <p><%= product.color %></p>
+      <p><%= product.price %></p>
     </div>
     </div>
 </div>

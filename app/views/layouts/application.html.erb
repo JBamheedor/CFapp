@@ -22,18 +22,21 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" id="navigation-bar" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header header">
-          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
           <div class="home-icon ">
-            <a class="navbar-brand glyphicon glyphicon-home" id="logo" href="#"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+            <%= link_to '<span class="glyphicon glyphicon-home"></span>'.html_safe, root_path, class: 'navbar-brand' %>
           </div><!--end home-icon-->
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#">About</a>
-            </li><!--dropdown menu-->
+              <%= link_to 'Bikes', products_path %>
+            </li>
             <li>
-              <a href="#">Contact</a>
+              <%= link_to 'About', simple_pages_about_path %>
+            </li>
+            <li>
+              <%= link_to 'Contact', simple_pages_contact_path %>
             </li>
           </ul>
         </div><!--en nav collapse-->
@@ -44,7 +47,7 @@
 
     <footer class = footer>
       <div class="container">
-        <p class="text-muted">&copy; 2017 Bike Berlin</p>
+        <p class="text-muted">&copy; 2018 Bike Berlin</p>
       </div>
     </footer>
 
