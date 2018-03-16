@@ -10,11 +10,13 @@ body {
 h1, h2, p  {
   text-align: center
 }
-h1, h2, .navbar-collapse {
-  font-family: 'Poiret One', cursive;
-}
-p {
+h1, h2, p .navbar-collapse {
   font-family: 'Pathway Gothic One', sans-serif;
+  text-align: center;
+}
+p, a {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.25em;
 }
 .center {
   display: block;
@@ -37,5 +39,32 @@ p {
    width:100%;
 }
 .row {
-  padding: 50px 0px;
+  padding-top: 50px;
 }
+.carousel {
+    position: relative;
+    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+.item img {
+margin: 0 auto;
+}
+
+.carousel-control.left, .carousel-control.right {
+ background-image:none;
+ outline: 0;
+ opacity: 1;
+}
+.col-md-4 {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.col-md-8 {
+  padding: 0;
+}
+//Horizontally centering search bar
+.form-inline {
+margin-top: 8px;
+   }
+a:hover{ text-decoration: none !important; }
