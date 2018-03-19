@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :products
   post 'simple_pages/thank_you'
 
