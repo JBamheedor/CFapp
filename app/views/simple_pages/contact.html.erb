@@ -3,8 +3,8 @@
 
 <%= flash[:notice] %>
 
-<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
-<div class="row">
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true, html: {class: "form-contact"}) do |form| %>
+<div class="contact_box">
   <div class="form-group">
     <%= form.label :name %>
     <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
@@ -17,6 +17,8 @@
     <%= form.label :message %>
     <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
   </div>
+  <div class="form-group">
+  <%= form.submit "Send", class:"btn btn-success", id:"ContactSendButton", type:"button" %>
+  </div>
 </div>
-<%= form.submit "Send", class: "form_label" %>
 <% end %>
