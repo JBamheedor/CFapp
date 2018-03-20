@@ -57,3 +57,5 @@ group :production do
 end
 # Authentication solution for Rails applications
 gem 'devise'
+# 5.5 Authorization gem restricts what resources a given user is allowed to access.
+gem 'cancancan', '~> 1.10'
