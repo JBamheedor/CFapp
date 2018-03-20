@@ -1,0 +1,270 @@
+/* line 1, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*{border: 1px solid red;}*/
+/* line 8, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+body {
+  margin-top: 70px;
+}
+
+/* line 11, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+h1, h2, p {
+  text-align: center;
+}
+
+/* line 14, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+h1, h2, p .navbar-collapse {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-align: center;
+}
+
+/* line 18, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+h1, h2 {
+  padding-bottom: 10px;
+}
+
+/* line 21, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+p, a {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.25em;
+}
+
+/* line 25, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* line 31, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.container-fluid {
+  margin: 0 15px;
+}
+
+/* line 35, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.text-muted {
+  font-family: 'Poiret One', cursive;
+}
+
+/* line 39, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
+
+/* line 45, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.row {
+  padding-top: 50px;
+}
+
+/* line 48, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.carousel {
+  position: relative;
+  padding: 10px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+/* line 54, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.item img {
+  margin: 0 auto;
+}
+
+/* line 58, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  outline: 0;
+  opacity: 1;
+}
+
+/* line 63, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.col-md-4 {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+/* line 67, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.col-md-8 {
+  padding: 0;
+}
+
+/* line 71, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-inline {
+  margin-top: 8px;
+}
+
+/* line 74, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#nav_search {
+  margin-left: 10px;
+}
+
+/* line 77, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 80, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.home-icon {
+  padding: 8px 0;
+}
+
+/* line 83, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.navbar-right li {
+  margin-right: 10px;
+}
+
+/* line 86, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-horizontal {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* line 92, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+ul.hmenu {
+  list-style: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+/* line 98, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+ul.hmenu li {
+  display: inline;
+}
+
+/* line 101, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-signup, .form-signin, .form-forgottenpassword {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* line 105, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form_links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 109, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.contact_box {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* line 113, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-control, .btn {
+  border-radius: 10px;
+}
+
+/* line 116, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#ContactSendButton {
+  float: right;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
