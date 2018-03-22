@@ -4,18 +4,13 @@
 
 /*{border: 1px solid red;}*/
 
-body {
-  margin-top: 70px;
-}
-h1, h2, p  {
-  text-align: center
-}
-h1, h2, p .navbar-collapse {
+h1, h2, h3, p, .navbar-collapse {
   font-family: 'Pathway Gothic One', sans-serif;
   text-align: center;
 }
-h1, h2 {
+.headers {
   padding-bottom: 10px;
+  margin-top: 80px;
 }
 p, a {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -28,22 +23,20 @@ p, a {
   width: 50%;
 }
 .container-fluid {
-    margin: 0 15px;
+    margin: 0 10px;
 }
-
 .text-muted {
   font-family: 'Poiret One', cursive;
 }
-
 .footer {position:fixed;
    left:0px;
    bottom:0px;
    height:30px;
    width:100%;
 }
-.row {
-  padding-top: 50px;
-}
+// .row {
+//   padding: 0 50px;
+// }
 .carousel {
     position: relative;
     padding: 10px;
@@ -53,24 +46,16 @@ p, a {
 .item img {
 margin: 0 auto;
 }
-
 .carousel-control.left, .carousel-control.right {
  background-image:none;
  outline: 0;
  opacity: 1;
 }
-.col-md-4 {
-  padding-left: 0;
-  padding-right: 10px;
-}
-.col-md-8 {
-  padding: 0;
-}
 //Horizontally centering search bar
 .form-inline {
 margin-top: 8px;
    }
-   #nav_search {
+#nav_search {
      margin-left: 10px;
    }
 a:hover {
@@ -85,18 +70,8 @@ a:hover {
 .form-horizontal {
   max-width: 600px;
   margin: 0 auto;
-
 }
 
-ul.hmenu {
-  list-style: none;
-  margin: 0 0 2em;
-  padding: 0;
-}
-
-ul.hmenu li {
-  display: inline;
-}
 .form-signup, .form-signin, .form-forgottenpassword {
   max-width: 350px;
   margin: 0 auto;
@@ -114,4 +89,82 @@ ul.hmenu li {
 }
 #ContactSendButton {
   float: right;
+}
+#nav_search
+{
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+// .cover {
+//   background-image: url("/images/covers/Outdoorbikecover.jpeg");
+//   width: 100%;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+// #Bikers {
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+// .bg {
+//   width: 100%;
+// }
+html, body {
+  padding: 0;
+  margin: 0;
+}
+#navigation-bar {
+  opacity: 0.8;
+}
+#Bikers {
+  position: relative;
+// z-index: -1;
+}
+.span {
+ position: absolute;
+}
+// h1 {
+//   padding-top: 40px;
+// }
+.show_product {
+  margin-top: 80px;
+  max-width: 960px;
+
+}
+// #ProductImage {
+//   max-width: 960px;
+
+#ProductName {
+  text-align: left;
+}
+#ProductPrice {
+  text-align: right;
+}
+// .left {
+//   float: left;
+//   width: 125px;
+//   text-align: left;
+//   margin: 2px 10px;
+//   // display: inline;
+// }
+//
+// .right {
+//   float: right;
+//   text-align: right;
+//   margin: 2px 10px;
+//   // display: inline;
+// }
+.h {
+  display: flex;
+  justify-content: space-between;
+}
+.product_name, .product_price {
+width: 50%
+}
+.product_name h2 {
+  text-align: left;
+}
+.product_price h2 {
+  text-align: right;
+}
+#ProductNav {
+  padding-top: 20px;
 }
