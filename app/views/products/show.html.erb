@@ -10,6 +10,8 @@
     </div>
   </div>
 
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
   <div class="row">
     <div class="col-md-12" id="ProductImage">
       <%= image_tag(@product.image_url, class:"img-responsive") %>
@@ -45,52 +47,10 @@
   </div>
 </div>
 
-
-<!-- <div class="container show_product">
-  <div class="row">
-    <div class="col-md-6" id="ProductImage">
-      <%= image_tag(@product.image_url, class:"img-responsive") %>
-    </div>
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-md-12">
-          <h3><%= @product.name %></h3>
-        </div>
-      </div>
-
-      <div class="row">
-       <div class="col-md-12">
-        <h4 class="product-price">$ <%= @product.price %></h4>
-       </div>
-      </div>
-
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="home" aria-selected="true">Description</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="feature-tab" data-toggle="tab" href="#feature" role="tab" aria-controls="feature" aria-selected="false">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="color-tab" data-toggle="tab" href="#color" role="tab" aria-controls="color" aria-selected="false">Color</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="reveiw-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
-        </li>
-      </ul>
-
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-          <h3>This is a test</h3><%= @product.description %>
-       </div>
-        <div class="tab-pane fade" id="feature" role="tabpanel" aria-labelledby="feature-tab"><h3>This is a test</h3><%= @product.description %></div>
-        <div class="tab-pane fade" id="color" role="tabpanel" aria-labelledby="color-tab">color</div>
-        <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">reviews</div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+
+<%= render 'new_comment' %>
+
+<%= render 'comments' %>
