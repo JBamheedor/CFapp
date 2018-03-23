@@ -1,4 +1,6 @@
 class Product < ApplicationRecord
+  #validation - requires all new products ot have a name
+  validates :name, presence: true
   has_many :orders
   has_many :comments
 
