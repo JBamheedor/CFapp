@@ -1,11 +1,51 @@
-<div class="row">
-  <div class="col-md-8">
+
+<!-- <div class="row">
+  <div class="col-sm-6">
+  <div class="card-deck">
+    <div class="card">
       <%= image_tag(product.image_url, class: "img-responsive")unless product.image_url.blank?%>
-  </div>
-  <div class="col-md-4">
-    <h3><%= link_to product.name, product_path(product.id) %></h3>
-    <p><%= product.description %></p>
-    <p><%= product.color %></p>
-    <p><%= product.price %></p>
+      <div class="card-block">
+        <h3 class="card-title"><%= link_to product.name, product_path(product.id) %></h3>
+        <p class="card-text"><p><%= product.description %></p>
+        <p class="card-text"><p>Color: <%= product.color %></p>
+        <p class="card-text"><p>Price: $<%= product.price %></p>
+        <div class="text-center"><%= link_to 'More info', product_path(product.id), class: "btn btn-primary btn-lg", role:"button", id:"ProductLinkButton"%></div>
+
+      </div>
+    </div>
   </div>
 </div>
+</div> -->
+<!-- <div class="row">
+  <div class="col-sm-6">
+    <div class="card-group">
+      <div class="card">
+        <%= image_tag(product.image_url, class: "card-img-top img-responsive")unless product.image_url.blank?%>
+        <div class="card-block">
+          <h3 class="card-title"><%= link_to product.name, product_path(product.id) %></h3>
+          <p class="card-text"><p><%= product.description %></p>
+          <p class="card-text"><p>Color: <%= product.color %></p>
+          <p class="card-text"><p>Price: $<%= product.price %></p>
+          <div class="text-center"><%= link_to 'More info', product_path(product.id), class: "btn btn-primary btn-lg", role:"button", id:"ProductLinkButton"%></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="card-deck">
+    <div class="col-md-6">
+      <div class="card card-inverse mb-3" style="background-color: #f9fbf7; border-radius: 30px;">
+        <!-- set a width on the image otherwise it will expand to full width       -->
+        <%= image_tag(product.image_url, class: "card-img-top img-responsive")unless product.image_url.blank?%>
+        <div class="card-body">
+          <h3 class="card-title"><%= link_to product.name, product_path(product.id) %></h3>
+          <p class="card-text"><p><%= product.description %></p>
+          <p class="card-text"><p>Color: <%= product.color %></p>
+          <p class="card-text"><p>Price: $<%= product.price %></p>
+          <div class="text-center"><%= link_to 'More info', product_path(product.id), class: "btn btn-primary btn-lg", role:"button", id:"ProductLinkButton"%>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- /.card -->
+    </div>

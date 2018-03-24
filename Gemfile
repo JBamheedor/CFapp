@@ -59,3 +59,5 @@ end
 gem 'devise'
 # 5.5 Authorization gem restricts what resources a given user is allowed to access.
 gem 'cancancan', '~> 1.10'
+# Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
