@@ -53,7 +53,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 # Adding pg gem as per 3.10 instructions
 group :production do
-  gem 'pg', '~> 0.20'
+  gem 'pg'
 end
 # Authentication solution for Rails applications
 gem 'devise'
