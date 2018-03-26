@@ -1,0 +1,379 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 1, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*{border: 1px solid red;}*/
+/* line 8, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+h1, h2, h3, p, .navbar-collapse {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-align: center;
+}
+
+/* line 12, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.headers {
+  padding-bottom: 10px;
+  margin-top: 80px;
+}
+
+/* line 16, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+p, a {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.25em;
+}
+
+/* line 20, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* line 26, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.container-fluid {
+  margin: 0 10px;
+}
+
+/* line 29, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.text-muted {
+  font-family: 'Poiret One', cursive;
+}
+
+/* line 32, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
+
+/* line 41, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.carousel {
+  position: relative;
+  padding: 10px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+/* line 47, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.item img {
+  margin: 0 auto;
+}
+
+/* line 50, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  outline: 0;
+  opacity: 1;
+}
+
+/* line 56, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-inline {
+  margin-top: 8px;
+}
+
+/* line 59, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#nav_search {
+  margin-left: 10px;
+}
+
+/* line 62, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 65, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.home-icon {
+  padding: 8px 0;
+}
+
+/* line 68, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.navbar-right li {
+  margin-right: 10px;
+}
+
+/* line 71, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-horizontal {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* line 76, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-signup, .form-signin, .form-forgottenpassword {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* line 80, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form_links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 84, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.contact_box {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* line 88, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.form-control, .btn {
+  border-radius: 10px;
+}
+
+/* line 91, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#ContactSendButton {
+  float: right;
+}
+
+/* line 94, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#nav_search {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* line 111, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+html, body {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+/* line 116, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#navigation-bar {
+  opacity: 0.8;
+}
+
+/* line 119, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#Bikers {
+  position: relative;
+}
+
+/* line 123, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.span {
+  position: absolute;
+}
+
+/* line 129, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.show_product {
+  margin-top: 80px;
+  max-width: 960px;
+}
+
+/* line 137, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#ProductName {
+  text-align: left;
+}
+
+/* line 140, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#ProductPrice {
+  text-align: right;
+}
+
+/* line 157, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.h {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 161, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.product_name, .product_price {
+  width: 50%;
+}
+
+/* line 164, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.product_name h2 {
+  text-align: left;
+}
+
+/* line 167, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.product_price h2 {
+  text-align: right;
+}
+
+/* line 173, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.tab-content {
+  padding-top: 20px;
+}
+
+/* line 176, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.product_info {
+  margin-bottom: 50px;
+}
+
+/* line 180, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+#ProductLinkButton {
+  color: white;
+}
+
+/* line 183, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.rated {
+  text-align: center;
+}
+
+/* line 187, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 194, /Users/joshbromehead/Desktop/CFapp/app/assets/stylesheets/simple_pages.scss */
+.new_comment {
+  max-width: 600px;
+  margin: 0 auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
