@@ -194,3 +194,12 @@ justify-content: center;
   max-width: 600px;
   margin: 0 auto;
 }
+.alerts {
+display: flex;
+justify-content: center;
+}
+#dialog {
+position: fixed;
+z-index: 2;
+margin-top: 100px;
+}
