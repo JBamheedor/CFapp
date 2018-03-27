@@ -61,3 +61,7 @@ gem 'devise'
 gem 'cancancan', '~> 1.10'
 # Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.0'
+# 6.1 adds RSpec-specific functionality to Rails called rspec-rails
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+end
