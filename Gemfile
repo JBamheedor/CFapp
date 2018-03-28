@@ -65,3 +65,5 @@ gem 'will_paginate', '~> 3.1.0'
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
 end
+# 6.3 Adding assigns and assert_template functions needed for functional stylesheet_link_taggem 'rails-controller-testing'
+gem 'rails-controller-testing'
