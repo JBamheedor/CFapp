@@ -64,6 +64,7 @@ gem 'will_paginate', '~> 3.1.0'
 # 6.1 adds RSpec-specific functionality to Rails called rspec-rails
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+  gem "factory_bot_rails", "~> 4.0"
 end
 # 6.3 Adding assigns and assert_template functions needed for functional stylesheet_link_taggem 'rails-controller-testing'
 gem 'rails-controller-testing'
