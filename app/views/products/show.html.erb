@@ -62,6 +62,14 @@
 
 <hr>
 
+<div class="container-fluid payment-button">
+<%= form_with(url: '/payments/create') do |form| %>
+  <%= render partial: 'shared/stripe_checkout_button' %>
+<% end %>
+</div>
+
+<hr>
+
 <div class="container-fluid">
   <%= render 'new_comment' %>
 </div>

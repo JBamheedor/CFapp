@@ -28,17 +28,16 @@ p, a {
 .text-muted {
   font-family: 'Poiret One', cursive;
 }
-.footer {position:fixed;
+.footer {
+   position:fixed;
    left:0px;
    bottom:0px;
    height:30px;
    width:100%;
 }
-// .row {
-//   padding: 0 50px;
-// }
+
 .carousel {
-    position: relative;
+    // position: relative;
     padding: 10px;
     width: 90%;
     margin: 10px auto;
@@ -53,7 +52,7 @@ margin: 0 auto;
 }
 //Horizontally centering search bar
 .form-inline {
-margin-top: 8px;
+ margin-top: 8px;
    }
 #nav_search {
      margin-left: 10px;
@@ -87,26 +86,12 @@ a:hover {
 .form-control, .btn {
   border-radius: 10px;
 }
-// #ContactSendButton {
-//   float: right;
-// }
+
 #nav_search
 {
   font-family: 'Pathway Gothic One', sans-serif;
 }
-// .cover {
-//   background-image: url("/images/covers/Outdoorbikecover.jpeg");
-//   width: 100%;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-// #Bikers {
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
-// .bg {
-//   width: 100%;
-// }
+
 html, body {
   padding: 0;
   margin: 0;
@@ -115,22 +100,33 @@ html, body {
 #navigation-bar {
   opacity: 0.8;
 }
-#Bikers {
+.wrapper {
   position: relative;
 }
+.ghost-button {
+  position:absolute;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+
 .span {
  position: absolute;
 }
-// h1 {
-//   padding-top: 40px;
-// }
+
 .show_product {
   margin-top: 80px;
   max-width: 960px;
 
 }
-// #ProductImage {
-//   max-width: 960px;
 
 #ProductName {
   text-align: left;
@@ -138,20 +134,7 @@ html, body {
 #ProductPrice {
   text-align: right;
 }
-// .left {
-//   float: left;
-//   width: 125px;
-//   text-align: left;
-//   margin: 2px 10px;
-//   // display: inline;
-// }
-//
-// .right {
-//   float: right;
-//   text-align: right;
-//   margin: 2px 10px;
-//   // display: inline;
-// }
+
 .h {
   display: flex;
   justify-content: space-between;
@@ -165,9 +148,7 @@ width: 50%
 .product_price h2 {
   text-align: right;
 }
-// #ProductNav {
-//   padding-top: 20px;
-// }
+
 .tab-content {
   padding-top: 20px;
 }
@@ -193,12 +174,67 @@ justify-content: center;
   max-width: 600px;
   margin: 0 auto;
 }
-.alerts {
+.alerts, .form-group{
 display: flex;
 justify-content: center;
 }
-#dialog {
-position: fixed;
-z-index: 2;
-margin-top: 100px;
+// #dialog {
+// position: fixed;
+// z-index: 2;
+// margin-top: 100px;
+// }
+.payment-button {
+  display: flex;
+  justify-content: center;
+}
+.img-wrapper {
+  position: relative;
+}
+
+.img-overlay {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.ghost-button {
+
+  margin-top: 50%;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.6s;
+overflow: hidden;
+cursor: pointer;
+}
+.ghost-button, .ghost-button:visited, .ghost-button:hover, .ghost-button:active {
+  color: #fff;}
+
+.ghost-button:hover {
+background-color: transparent;
+}
+.ghost-button:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+.ghost-button:hover:before {
+	width: 100%;
 }
