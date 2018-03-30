@@ -178,11 +178,11 @@ justify-content: center;
 display: flex;
 justify-content: center;
 }
-// #dialog {
-// position: fixed;
-// z-index: 2;
-// margin-top: 100px;
-// }
+#dialog {
+position: fixed;
+z-index: 2;
+margin-top: 100px;
+}
 .payment-button {
   display: flex;
   justify-content: center;
