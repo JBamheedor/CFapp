@@ -68,5 +68,7 @@ group :development, :test do
 end
 # 6.3 Adding assigns and assert_template functions needed for functional stylesheet_link_taggem 'rails-controller-testing'
 gem 'rails-controller-testing'
-
-gem 'stripe' 
+# 6.6 Payment gem
+gem 'stripe'
+# 6.8  security scanner for Ruby on Rails applications.
+gem "brakeman"

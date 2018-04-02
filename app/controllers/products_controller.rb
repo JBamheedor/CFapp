@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:show, :index]
+
 
   # GET /products
   # GET /products.json
@@ -21,11 +23,19 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    @product = Product.new
+    if signed_in? && current_user.admin?
+      @product = Product.new
+    else
+      redirect_to root_path, alert: "You don't have access to this page"
+    end
   end
 
   # GET /products/1/edit
   def edit
+    if signed_in? && current_user.admin?
+    else
+      redirect_to root_path, alert: "You don't have access to this page"
+    end
   end
 
   # POST /products
