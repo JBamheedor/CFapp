@@ -11,9 +11,8 @@
   </div>
 
   <div class="row col-md-12">
-    <div class="rated" data-score="<%= @product.average_rating %>">
+    <div class="rated" id="#average-rating" data-score="<%= @product.average_rating %>">
     </div>
-
   </div>
 
 
@@ -35,9 +34,9 @@
         <li class="nav-item">
           <a class="nav-link" id="color-tab" data-toggle="tab" href="#color" role="tab" aria-controls="color" aria-selected="false">Color</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" id="reveiw-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
-        </li>
+        </li> -->
       </ul>
 
       <div class="tab-content" id="myTabContent">
@@ -46,29 +45,38 @@
        </div>
         <div class="tab-pane" id="feature" role="tabpanel" aria-labelledby="feature-tab"><p>flexitarian Blue Bottle lomo stumptown Wes Anderson hashtag shabby chic deep v try-hard sartorial Schlitz pug Echo Park Portland pop-up PBR meggings Banksy occupy flannel cardigan fixie gastropub Pitchfork art party pork belly lo-fi PBR & B umami mlkshk bicycle rights quinoa +1 cray authentic crucifix tote bag tousled plaid bitters selvage keytar biodiesel farm-to-table salvia cred tofu ennui semiotics Intelligentsia irony leggings dreamcatcher Shoreditch retro Tumblr gluten-free literally cliche ethical chillwave messenger bag next level Vice trust fund Helvetica Odd Future Tonx typewriter wolf sustainable Marfa High Life drinking vinegar kogi Brooklyn whatever kale chips street art ugh Thundercats 90's synth meh Carles wayfarers fanny pack blog Godard butcher Truffaut single-origin coffee Bushwick mumblecore mustache paleo put a bird on it organic slow-carb</p></div>
         <div class="tab-pane" id="color" role="tabpanel" aria-labelledby="color-tab"><p>Available colors: <%= @product.color %></p></div>
-        <div class="tab-pane" id="review" role="tabpanel" aria-labelledby="review-tab"><p><%= render 'comments' %></p><p><%= will_paginate @comments %></p></div>
+        <!-- <div class="tab-pane" id="review" role="tabpanel" aria-labelledby="review-tab"><p><%= render 'comments' %><%= will_paginate @comments %></div> -->
       </div>
     </div>
   </div>
 </div>
 
-<div>
+<!-- <div>
   <% if notice %>
-      <p id="notice" class="alert alert-info" role="alert"><%= notice %></p>
+      <p id="notice" class="notice alert-info" role="notice"><%= notice %></p>
   <% end %>
 
   <% if alert %>
   <p id="alert" class="alert alert-warning" role="alert"><%= alert %></p>
   <% end %>
-</div>
+</div> -->
 
-<hr>
+<!-- <hr> -->
 
 <div class="container-fluid payment-button">
 <%= form_with(url: '/payments/create') do |form| %>
   <%= render partial: 'shared/stripe_checkout_button' %>
   <%= hidden_field_tag(:product_id, @product.id) %>
 <% end %>
+</div>
+
+    <h3> Product Reviews<span class="glyphicon glyphicon-circle-arrow-down"></span></h3>
+
+<div class="container-fluid" id="collapseReviews">
+  <%= render 'comments' %>
+  <div class="BootstrapPagination">
+    <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
+  </div>
 </div>
 
 <hr>

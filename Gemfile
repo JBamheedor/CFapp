@@ -72,3 +72,5 @@ gem 'rails-controller-testing'
 gem 'stripe'
 # 6.8  security scanner for Ruby on Rails applications.
 gem "brakeman"
+
+gem 'will_paginate-bootstrap'

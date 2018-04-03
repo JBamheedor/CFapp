@@ -1,0 +1,11 @@
+$("#AddReviewHeading").fadeOut( 1200 , function() {
+  $("#AddReviewHeading").replaceWith("<h3>Thanks for the review.</h3>");
+});
+
+$("#new_comment").slideUp( 1200 );
+
+$(".product-reviews").prepend("<%= j render @comment %>");
+
+$("#average-rating").attr('data-score', "<%= @product.average_rating %>");
+
+refreshRating();

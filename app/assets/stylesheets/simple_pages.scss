@@ -255,6 +255,28 @@ background-color: transparent;
 .label_better {
  width: 350px;
 }
-.top {
-top: none;
+// .top {
+// top: none;
+// }
+.nav-tabs {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.BootstrapPagination, .review-dropdown {
+  display: flex;
+  justify-content: center;
+}
+.btn>h3 {
+  margin-top: 10px;
+
+}
+#collapseReviewsButton {
+margin-top: 20px;
+}
+.glyphicon-circle-arrow-down {
+  margin-left: 8px;
+}
+.payment-button {
+  padding: 30px;
 }

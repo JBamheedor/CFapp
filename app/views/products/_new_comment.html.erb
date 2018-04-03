@@ -1,26 +1,19 @@
 <% if signed_in? %>
-  <h3>Add a review:</h3>
-  <%= form_for([@product, @product.comments.build]) do |f| %>
+  <h3 id="AddReviewHeading">Add a review:</h3>
+  <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
 
   <div class="field form-group row">
-
-      <%= f.label :body, "Comments", class:"col-sm-2 col-form-label" %>
-<div class="col-sm-10">
-
+    <%= f.label :body, "Comments", class:"col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
       <%= f.text_area :body, class:"form-control", type:"text" %>
-</div>
+    </div>
   </div>
-
   <div class="field form-group">
-      <div class="rating">
-      </div>
+    <div class="rating">
+    </div>
   </div>
-
   <div class="field form-group">
-
-
-      <%= f.submit "Submit", class:"btn btn-success active", type:"submit"  %>
-
+    <%= f.submit "Submit", class:"btn btn-success active", type:"submit"  %>
+    <% end %>
   <% end %>
-<% end %>
-</div>
+ </div>
