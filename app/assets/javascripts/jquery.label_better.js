@@ -43,7 +43,7 @@
         posy = ($(this).height() + settings.offset) * -1;
 
         $(this).css({
-          // "top": "0",
+          "top": "0",
           "opacity": "1",
           "-webkit-transform": "translate3d(" + posx + ", " + posy + "px, 0)",
           "-moz-transform": "translate3d(" + posx + ", " + posy + "px, 0)",
