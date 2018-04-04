@@ -3,8 +3,11 @@
   <a class="ghost-button" href="#">Shop our bikes</a>
 </div> -->
 <div class="img-wrapper">
+  <% cache do %>
+
   <%= image_tag('covers/Outdoorbikecover.jpeg' , :class => "img-responsive", id:"Bikers")%>
 
+<% end %>
   <div class="img-overlay">
     <%= link_to 'Shop', products_path, class: "ghost-button btn", role:"button", id:"HomepageLinkButton"%>
   </div>

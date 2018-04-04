@@ -74,3 +74,5 @@ gem 'stripe'
 gem "brakeman"
 
 gem 'will_paginate-bootstrap'
+
+gem 'dalli'
