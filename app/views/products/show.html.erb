@@ -96,3 +96,8 @@
   <%= link_to ('<span class="glyphicon glyphicon-arrow-left"></span>Back').html_safe, products_path, class: "btn btn-default btn-lg", role:"button", id:"BackLinkButton"%>
   </p>
 </div>
+
+
+ <div class="review-count">
+   <p>Product Views: <%= @product.viewed %></p>
+ </div>
