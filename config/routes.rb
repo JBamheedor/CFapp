@@ -23,6 +23,7 @@ Rails.application.routes.draw do
 
   get 'payments/create'
 
+  mount ActionCable.server => '/cable'
 
 
 

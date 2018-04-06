@@ -53,4 +53,6 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   # Adding in order for devise gem to install
   config.action_mailer.default_url_options = { host:'localhost:3000' }
+
+  config.app_generators.javascript_engine = :javascript
 end
