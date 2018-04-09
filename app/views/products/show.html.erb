@@ -1,4 +1,4 @@
-<div class="container show_product">
+<div class="container show_product" data-product-id="<%= @product.id %>">
   <div class="row col-md-12 h">
     <div class="product_name left">
       <h2 class"name_show"><%= @product.name %></h2>
@@ -12,8 +12,6 @@
     <div class="rated" id="#average-rating" data-score="<%= @product.average_rating %>">
     </div>
   </div>
-
-
   <div class="row">
     <div class="col-md-12" id="ProductImage">
       <%= image_tag(@product.image_url, class:"img-responsive img-zoom", data_zoom_image: "product.image_url") %>
@@ -59,7 +57,7 @@
   <% end %>
 </div> -->
 
-<!-- <hr> -->
+
 
 <div class="container-fluid payment-button">
 <%= form_with(url: '/payments/create') do |form| %>

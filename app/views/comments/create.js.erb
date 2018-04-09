@@ -4,7 +4,7 @@ $("#AddReviewHeading").fadeOut( 1200 , function() {
 
 $("#new_comment").slideUp( 1200 );
 
-$(".product-reviews").prepend("<%= j render @comment %>");
+// $(".product-reviews").prepend("<%= j render @comment %>");
 
 $("#average-rating").attr('data-score', "<%= @product.average_rating %>");
 
