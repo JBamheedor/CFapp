@@ -1,6 +1,9 @@
 class Product < ApplicationRecord
-  #validation - requires all new products ot have a name
-  validates :name, presence: true
+  #validation - requires all new products to match criteria below:
+  validates :name, :color, :image_url, presence: true
+  validates :description, length: { minimum: 10 }
+  validates :price, numericality: { only_integer: true }
+
   has_many :orders
   has_many :comments
 
