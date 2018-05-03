@@ -4,30 +4,23 @@
 </div> -->
 <div class="img-wrapper">
   <% cache do %>
-
   <%= image_tag('covers/Outdoorbikecover.jpeg' , :class => "img-responsive", id:"Bikers")%>
-
-<% end %>
+  <% end %>
   <div class="img-overlay">
+    <h1>Welcome to BikeEverywhere</h1>
     <%= link_to 'Shop', products_path, class: "ghost-button btn", role:"button", id:"HomepageLinkButton"%>
   </div>
 </div>
-
-
 
 <h1>Your home for bikes that take you everywhere</h1>
 
 <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-
     <% 0...@products.each do |i| %>
          <li <%= "class=active" if i == 0 %> data-target="#carousel-example-generic" data-slide-to="<%= i %>"></li>
-         <% end %>
+    <% end %>
   </ol>
-
-
-
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
@@ -39,7 +32,6 @@
     </div>
     <% end %>
   </div>
-
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
