@@ -243,11 +243,8 @@ margin-top: 20px;
   padding: 8px;
   color: #fff;
   border: 1px solid #fff;
-  text-align: center;
   outline: none;
-  text-decoration: none;
-}
-.ghost-button {
+  max-width: 100%;
   margin-top: 35%;
   padding: 10px;
   color: #fff;
@@ -280,9 +277,12 @@ background-color: transparent;
 	transition: all 2s ease;
 }
 .ghost-button:hover:before {
-	width: 100%;
+	max-width: 100%;
 }
 // ==== Images =====
 .aboutImg {
   border-radius: 5px;
+}
+@media only screen and (min-width: 600px) {
+
 }
