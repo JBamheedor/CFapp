@@ -77,6 +77,10 @@ footer {
   background-color: black;
   padding-top: 20px;
 }
+.contact {
+  margin-top: 20px;
+}
+
 // ======== Positioning ========
 .headers {
   margin-top: 50px;
@@ -232,7 +236,7 @@ margin-top: 20px;
 .mainTitle  {
   width: 100%;
 }
-.form_links, .contact_box {
+.form_links, {
   margin-bottom: 300px;
 }
 //==== Effects =======
@@ -283,8 +287,23 @@ background-color: transparent;
 .aboutImg {
   border-radius: 5px;
 }
-@media only screen and (min-width: 600px) {
-.ghost-button {
-  width: 100%;
+// =====Maps =======
+.map-responsive{
+    overflow:hidden;
+    padding-bottom: 300px;
+    position:relative;
+    height:0;
+    max-width: 500px;
+    margin: 20px auto;
 }
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+// ====== Glyphicons ======
+.glyphicon {
+  padding-right: 5px;
 }
