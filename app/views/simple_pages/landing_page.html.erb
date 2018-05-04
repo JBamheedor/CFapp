@@ -1,44 +1,11 @@
-<!-- <div class="wrapper" id"LandingCover">
-  <%= image_tag('covers/Outdoorbikecover.jpeg' , :class => "img-responsive", id:"Bikers")%>
-  <a class="ghost-button" href="#">Shop our bikes</a>
-</div> -->
 <div class="img-wrapper">
   <% cache do %>
-  <%= image_tag('covers/Outdoorbikecover.jpeg' , :class => "img-responsive", id:"Bikers")%>
+  <%= image_tag('covers/1.jpg' , :class => "img-responsive", id:"Bikers")%>
   <% end %>
   <div class="img-overlay">
-    <h1>Welcome to BikeEverywhere</h1>
+    <div class="mainTitle">
+    <h1>Bike Everywhere</h1>
+  </div>
     <%= link_to 'Shop', products_path, class: "ghost-button btn", role:"button", id:"HomepageLinkButton"%>
   </div>
-</div>
-
-<h1>Your home for bikes that take you everywhere</h1>
-
-<div id="carousel-example-generic" class="carousel slide container" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <% 0...@products.each do |i| %>
-         <li <%= "class=active" if i == 0 %> data-target="#carousel-example-generic" data-slide-to="<%= i %>"></li>
-    <% end %>
-  </ol>
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <% @products.each do |product| %>
-    <div class="item<%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url) unless product.image_url.blank?%>
-      <div class="carousel-caption">
-        <%= product.name %>
-      </div>
-    </div>
-    <% end %>
-  </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>

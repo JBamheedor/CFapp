@@ -4,22 +4,82 @@
 
 /*{border: 1px solid red;}*/
 
-// ======== Positioning ========
-// ======== Box model ========
-// ======== Typographic ========
-// ======== Visual ========
 
+// ======== Typographic ========
 h1, h2, h3, p, .navbar-collapse {
   font-family: 'Pathway Gothic One', sans-serif;
   text-align: center;
 }
-.headers {
-  padding-bottom: 10px;
-  margin-top: 80px;
-}
 p, a {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 1.25em;
+}
+#nav_search {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+footer p, footer h6, footer a {
+    color: #9d9d9d;
+    font-size: 1em;
+}
+#ProductName {
+  text-align: left;
+}
+#ProductPrice {
+  text-align: right;
+}
+#ProductLinkButton {
+  color: white;
+}
+.btn>h3 {
+  margin-top: 10px;
+}
+.mainTitle h1{
+  font-family: 'Gugi', cursive;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: black;
+  border-color: black;
+  padding: 5px 0;
+  letter-spacing: 7px;
+  width: 50%;
+  font-size: 4vw;
+  border-radius: 10px;
+  margin: 8% auto;
+}
+// ======== Visual ========
+#navigation-bar, footer {
+  opacity: 0.8;
+}
+#Bikers {
+  opacity: 0.7;
+}
+.btn {
+border-radius: 20px;
+}
+#ProductLinkButton {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.jumbotron {
+  padding: 10px;
+}
+.about_us p {
+  padding-top: 10px;
+}
+.card {
+  margin-top: 10px;
+}
+.home-icon {
+  padding: 8px 0;
+}
+footer {
+  height: 100%;
+  background-color: black;
+  padding-top: 20px;
+}
+// ======== Positioning ========
+.headers {
+  margin-top: 50px;
 }
 .center {
   display: block;
@@ -30,43 +90,15 @@ p, a {
 .container-fluid {
     margin: 0 10px;
 }
-.text-muted {
-  font-family: 'Poiret One', cursive;
-}
-.footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-}
-
-.carousel {
-    // position: relative;
-    padding: 10px;
-    width: 90%;
-    margin: 10px auto;
-}
 .item img {
-margin: 0 auto;
-}
-.carousel-control.left, .carousel-control.right {
- background-image:none;
- outline: 0;
- opacity: 1;
+  margin: 0 auto;
 }
 //Horizontally centering search bar
 .form-inline {
- margin-top: 8px;
-   }
-#nav_search {
-     margin-left: 10px;
-   }
-a:hover {
- text-decoration: none !important;
+   margin-top: 8px;
 }
-.home-icon {
-  padding: 8px 0;
+#nav_search {
+  margin-left: 10px;
 }
 .navbar-right li {
   margin-right: 10px
@@ -75,7 +107,6 @@ a:hover {
   max-width: 600px;
   margin: 0 auto;
 }
-
 .form-signup, .form-signin, .form-forgottenpassword {
   max-width: 350px;
   margin: 0 auto;
@@ -88,58 +119,20 @@ a:hover {
   max-width: 400px;
   margin: 0 auto;
 }
-.form-control, .btn {
-  border-radius: 10px;
-}
-
-#nav_search
-{
-  font-family: 'Pathway Gothic One', sans-serif;
-}
-
 html, body {
   padding: 0;
   margin: 0;
-  padding-bottom: 100px;
-}
-#navigation-bar {
-  opacity: 0.8;
 }
 .wrapper {
   position: relative;
 }
-.ghost-button {
-  position:absolute;
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 1px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-}
-
-
-
-
 .span {
  position: absolute;
 }
-
 .show_product {
   margin-top: 80px;
   max-width: 960px;
-
 }
-
-#ProductName {
-  text-align: left;
-}
-#ProductPrice {
-  text-align: right;
-}
-
 .h {
   display: flex;
   justify-content: space-between;
@@ -153,7 +146,6 @@ width: 50%
 .product_price h2 {
   text-align: right;
 }
-
 .tab-content {
   padding-top: 20px;
 }
@@ -161,16 +153,12 @@ width: 50%
 {
   margin-bottom: 50px;
 }
-#ProductLinkButton {
-  color: white;
-}
 .rated {
-  // margin: 0 auto;
   text-align: center;
 }
 .nav-tabs {
   display: flex;
-justify-content: center;
+  justify-content: center;
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
@@ -180,13 +168,13 @@ justify-content: center;
   margin: 0 auto;
 }
 .alerts, .form-group{
-display: flex;
-justify-content: center;
-}
+  display: flex;
+  justify-content: center;
+  }
 #dialog {
-position: fixed;
-z-index: 2;
-margin-top: 100px;
+  position: fixed;
+  z-index: 2;
+  margin-top: 100px;
 }
 .payment-button {
   display: flex;
@@ -195,7 +183,6 @@ margin-top: 100px;
 .img-wrapper {
   position: relative;
 }
-
 .img-overlay {
   display: flex;
   justify-content: center;
@@ -206,43 +193,9 @@ margin-top: 100px;
   right: 0;
   text-align: center;
 }
-
-.ghost-button {
-
-  margin-top: 50%;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1.5em;
-  -webkit-transition-duration: 0.4s; /* Safari */
-transition-duration: 0.6s;
-overflow: hidden;
-cursor: pointer;
-}
-.ghost-button, .ghost-button:visited, .ghost-button:hover, .ghost-button:active {
-  color: #fff;}
-
-.ghost-button:hover {
-background-color: transparent;
-}
-.ghost-button:before {
-	content:'';
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 0px;
-	height: 100%;
-	background: rgba(255,255,255,0.3);
-	border-radius: 5px;
-	transition: all 2s ease;
-}
-.ghost-button:hover:before {
-	width: 100%;
-}
+.mainTitle {
+    margin-top: 8%;
+  }
 .glyphicon-arrow-left {
   padding-right: 5px;
 }
@@ -255,21 +208,13 @@ background-color: transparent;
 .label_better {
  width: 350px;
 }
-// .top {
-// top: none;
-// }
 .nav-tabs {
   margin-top: 20px;
   padding: 10px;
 }
-
 .BootstrapPagination, .review-dropdown {
   display: flex;
   justify-content: center;
-}
-.btn>h3 {
-  margin-top: 10px;
-
 }
 #collapseReviewsButton {
 margin-top: 20px;
@@ -283,4 +228,61 @@ margin-top: 20px;
 }
 .payment-button {
   padding: 30px;
+}
+.mainTitle  {
+  width: 100%;
+}
+.form_links, .contact_box {
+  margin-bottom: 300px;
+}
+//==== Effects =======
+.ghost-button {
+  position:absolute;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button {
+  margin-top: 35%;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.6s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.ghost-button, .ghost-button:visited, .ghost-button:hover, .ghost-button:active {
+  color: #fff;
+}
+.ghost-button:hover {
+background-color: transparent;
+}
+.ghost-button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+.ghost-button:hover:before {
+	width: 100%;
+}
+// ==== Images =====
+.aboutImg {
+  border-radius: 5px;
 }

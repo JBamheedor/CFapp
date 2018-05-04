@@ -1,41 +1,9 @@
-<!-- <div class="headers">
-  <h1>Get in touch</h1>
+<div class="jumbotron headers">
+  <h1>Contact us</h1>
+  <p>Send us any questions or concerns</p>
 </div>
-
-<p>This is how you can get in touch with us...</p>
-
-<%= flash[:notice] %>
-
-<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true, html: {class: "form-contact"}) do |form| %>
-<div class="contact_box">
-  <div class="form-group">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :email %>
-    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :message %>
-    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
-  </div>
-  <div class="form-group">
-  <%= form.submit "Send", class:"btn btn-success", id:"ContactSendButton", type:"button" %>
-  </div>
-</div>
-<% end %> -->
-
-<div class="headers">
-  <h1>Contact Us</h1>
-</div>
-
-<p>Send us any questions or concerns</p>
-
-
 <div class="container forms">
   <%= flash[:notice] %>
-
   <%= form_tag("/simple_pages/thank_you", html: {class: "form-contact"}) do %>
       <div class="form-row contact_box">
         <div class="form-group ">
@@ -44,18 +12,12 @@
         <div class="form-group ">
           <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", :required => true %>
         </div>
-
         <div class="form-group ">
          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", rows: 8, :required => true %>
         </div>
-
-       <div class="form-group ">
-  <%= submit_tag "Send Message", class: "btn-sm btn-success", id:"ContactSendButton", type:"button" %>
+        <div class="form-group ">
+        <%= submit_tag "Send Message", class: "btn btn-success", id:"ContactSendButton", type:"button" %>
       </div>
+    </div>
   <% end %>
-</div><!-- end container -->
-
-<div id="map">
-  <!--iframe width="90%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=K%C3%B6penicker%20Str.%20126%2C%2010179%20Berlin%2C%20Germany&key=AIzaSyCDF_aX2D4yfaUKUMi9pOTqM-4wKkKTLs8" allowfullscreen>
-  </iframe-->
 </div>

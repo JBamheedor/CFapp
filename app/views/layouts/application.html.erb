@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CFapp</title>
+    <title>Bike Everywhere</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Includes JS in all our views -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Gugi|Pacifico|Poiret+One|Skranji|Courgette" rel="stylesheet">
 
   </head>
 
@@ -37,7 +37,7 @@
               <div class="form-group">
               <%= form.text_field :q, id: 'q', value: params[:q], class:"form-control", type:"search", placeholder:"Search" %>
              </div>
-              <%= form.submit 'Search', class:"btn btn-outline-success", type:"submit" %>
+              <%= form.submit 'Search', class:"btn btn-outline-light", type:"submit" %>
             <% end %>
           <ul class="nav navbar-nav navbar-right nav-pills">
             <li>
@@ -63,25 +63,59 @@
       </div><!--end nav container-->
     </nav><!--end navbar-->
 
-<div class="container-fluid alerts">
-    <div id="dialog">
-      <% if notice %>
-          <p id="notice" class="alert alert-info" role="alert"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-      <p id="alert" class="alert alert-warning" role="alert"><%= alert %></p>
-      <% end %>
-   </div>
-</div>
-
+    <div class="container-fluid alerts">
+        <div id="dialog">
+          <% if notice %>
+              <p id="notice" class="alert alert-info" role="alert"><%= notice %></p>
+          <% end %>
+          <% if alert %>
+          <p id="alert" class="alert alert-warning" role="alert"><%= alert %></p>
+          <% end %>
+       </div>
+    </div>
 
     <%= yield %>
 
-    <footer class = footer>
-      <div class="container">
-        <p class="text-muted">&copy; 2018 Bike Berlin</p>
+    <footer class=" font-small">
+      <div class="container text-center">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h6 class="text-uppercase font-weight-bold">Bike Everywhere</h6>
+                <p>Lorem ipsum dolor amet beard whatever franzen put a bird on it hot chicken, etsy seitan swag iceland hella activated charcoal. Normcore ethical fam brunch cloud bread ennui disrupt tousled. Edison bulb asymmetrical cold-pressed organic, everyday carry vexillologist actually palo santo. Wayfarers chartreuse master cleanse humblebrag. Try-hard ennui whatever shaman raclette, trust fund cred vinyl asymmetrical. Pop-up synth cray, meh lo-fi bitters vinyl bespoke fingerstache ramps humblebrag lumbersexual marfa.</p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p><a href="#!">Bikes</a></p>
+                <p><a href="#!">Clothing</a></p>
+                <p><a href="#!">Gear</a></p>
+                <p><a href="#!">Accessories</a></p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                <p><a href="#!">Your Account</a></p>
+                <p><a href="#!">Delivery</a></p>
+                <p><a href="#!">Shipping Rates</a></p>
+                <p><a href="#!">Help</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row  align-items-center">
+          <div class="col-md-12">
+            <p class="text-center text-md-left grey-text">© 2018 Copyright: BikeEverywhere</a></p>
+          </div>
+          <div class="col-md-12">
+            <div class="text-center">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item"><%= link_to image_tag('logos/006-facebook.png', :class => "img-responsive social")%></li>
+                <li class="list-inline-item"><%= link_to image_tag('logos/005-instagram.png', :class => "img-responsive social")%></li>
+                <li class="list-inline-item"><%= link_to image_tag('logos/004-youtube.png', :class => "img-responsive social")%></li>
+                <li class="list-inline-item"><%= link_to image_tag('logos/001-pinterest.png', :class => "img-responsive social")%></li>
+                <li class="list-inline-item"><%= link_to image_tag('logos/002-medium.png', :class => "img-responsive social")%></li>                      <li class="list-inline-item"><%= link_to image_tag('logos/003-linkedin.png', :class => "img-responsive social")%></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-
   </body>
 </html>

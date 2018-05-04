@@ -1,18 +1,14 @@
 <p id="notice"><%= notice %></p>
-<div class="headers">
+<div class="jumbotron headers">
   <h1>Products</h1>
+  <p>Take a look at our selection of BikeEverywhere Bikes</p>
 </div>
-
-
-
 <div class="container-fluid products_main">
   <!-- <% cache(cache_key_for_products) do %> -->
     <%= render @products %>
   <!-- <% end %> -->
 </div>
-
 <br>
-
 <div class="container-fluid">
   <p>
     <% if signed_in? && current_user.admin? %>
