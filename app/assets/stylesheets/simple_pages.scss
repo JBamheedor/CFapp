@@ -263,26 +263,26 @@ margin-top: 20px;
   overflow: hidden;
   cursor: pointer;
 }
-.ghost-button, .ghost-button:visited, .ghost-button:hover, .ghost-button:active {
-  color: #fff;
-}
-.ghost-button:hover {
-background-color: transparent;
-}
-.ghost-button:before {
-	content:'';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background: rgba(255,255,255,0.3);
-	border-radius: 5px;
-	transition: all 2s ease;
-}
-.ghost-button:hover:before {
-	max-width: 100%;
-}
+// .ghost-button, .ghost-button:visited, .ghost-button:hover, .ghost-button:active {
+//   color: #fff;
+// }
+// .ghost-button:hover {
+// background-color: transparent;
+// }
+// .ghost-button:before {
+// 	content:'';
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 0;
+// 	height: 100%;
+// 	background: rgba(255,255,255,0.3);
+// 	border-radius: 5px;
+// 	transition: all 2s ease;
+// }
+// .ghost-button:hover:before {
+// 	max-width: 100%;
+// }
 // ==== Images =====
 .aboutImg {
   border-radius: 5px;
