@@ -13,4 +13,4 @@ Set up functions such as signing up, signing in, product ratings, reviews, and r
 Uses WebSockets through ActionCable to send real-time updates to users
 Models and controllers tested
 Designed and made interactive with Bootstrap and JavaScript
-Gems used: RSepc, FactoryBoy, Stripe, Brakeman, Memcached & Dalli, Redis
+Gems used: RSepc, FactoryBoy, Stripe, Brakeman, Memcached & Dalli, Redis.
